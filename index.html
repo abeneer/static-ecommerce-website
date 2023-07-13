@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete Responsive Grocery Website Design Tutorial</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Swiper link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- header section starts -->
+    <header class="header">
+      <a href="#" class="logo"><i class="fas fa-laptop-house"></i>Electro</a>
+      <nav class="navbar">
+        <a href="#Home">home</a>
+        <a href="#Features">features</a>
+        <a href="#Products">products</a>
+        <a href="#Categories">catogories</a>
+        <a href="#Reviews">reviews</a>
+        <a href="#Blogs">blogs</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/p-1.png" alt="" />
+          <div class="content">
+            <h3>AC</h3>
+            <span class="price">$899/-active</span>
+            <span class="quantity">qty : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/p-2.png" alt="" />
+          <div class="content">
+            <h3>Fridge</h3>
+            <span class="price">$1699/-active</span>
+            <span class="quantity">qty : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/p-9.png" alt="" />
+          <div class="content">
+            <h3>Toster</h3>
+            <span class="price">$499/-active</span>
+            <span class="quantity">qty : 1</span>
+          </div>
+        </div>
+        <div class="total">total : $3097/-</div>
+        <a href="#" class="btn">checkout</a>
+      </div>
+
+      <form action="" class="Login-form">
+        <h3>Login now</h3>
+        <input type="email" placeholder="your email" class="box" />
+        <input type="password" placeholder="your email" class="box" />
+        <p>forget your password<a href="#">click here</a></p>
+        <p>don't have an account<a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn" />
+      </form>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Tech Haven</h3>
+        <p>Discover the Future of Electronics.</p>
+        <a href="#" class="btn">shop now</a>
+      </div>
+    </section>
+    <!-- home section ends -->
+
+    <!-- Caraousel   -->
+
+    <div class="slider">
+      <div class="slide-track">
+        <!---slides--->
+
+        <div class="slide">
+          <img src="image/e-1.png" alt="" />
+          <h1>VR Headset</h1>
+        </div>
+
+        <div class="slide">
+          <img src="image/e-2.png" alt="" />
+          <h1>Washing Machine</h1>
+        </div>
+
+        <div class="slide">
+          <img src="image/e-3.png" alt="" />
+          <h2 style="color:aliceblue;margin-left: 50px; margin-top:15px; font-size: 26px;">Laptop</h2>
+        </div>
+
+        <div class="slide">
+          <img src="image/e-4.png" alt="" />
+          <h2 style="color:aliceblue;margin-left: 50px;margin-top:15px; font-size: 26px;">Television</h2>
+        </div>
+
+        <div class="slide">
+          <img src="image/e-5.png" alt="" />
+          <h2 style="color:aliceblue;margin-left: 50px; margin-top:15px; font-size: 26px;">Iphone</h2>
+        </div>
+
+        <div class="slide">
+          <img src="image/e-6.png" alt="" />
+          <h1>Sound System</h1>
+        </div>
+
+        <!--  <div class="slide">
+          <img src="image/e-7.png" alt="" />
+        </div>  -->
+        
+        <div class="slide">
+          <img src="image/e-8.png" alt="" />
+          <h1>Air Condition</h1>
+        </div>
+
+        <div class="slide">
+          <img src="image/e-9.png" alt="" />
+          <h2 style="color:aliceblue;margin-left: 50px;margin-top:15px; font-size: 26px;">Printer</h2>
+        </div>
+
+        <div class="slide">
+          <img src="image/e-10.png" alt="" />
+          <h1>Gaming Keyboard</h1>
+        </div>
+
+         <div class="slide">
+          <img src="image/e-11.png" alt="" />
+          <h2 style="color:aliceblue;margin-left: 50px;margin-top:15px; font-size: 26px;">Computer <br>Accessories</h2>
+        </div>
+
+        <div class="slide">
+          <img src="image/e-1.png" alt="" />
+          <h1>VR Headset</h1>
+        </div>
+
+        <div class="slide">
+          <img src="image/e-2.png" alt="" />
+          <h1>Washing Machine</h1>
+        </div>
+
+        <div class="slide">
+          <img src="image/e-3.png" alt="" />
+          <h2 style="color:aliceblue;margin-left: 50px;margin-top:15px; font-size: 26px;">Laptop</h2>
+        </div>
+
+        <div class="slide">
+          <img src="image/e-4.png" alt="" />
+          <h2 style="color:aliceblue;margin-left: 50px; margin-top:15px; font-size: 26px;">Television</h2>
+        </div> -->
+
+        <div class="slide">
+          <img src="image/e-5.png" alt="" />
+          <h2 style="color:aliceblue;margin-left: 50px; margin-top:15px; font-size: 26px;">Iphone</h2>
+
+        </div>
+
+        <div class="slide">
+          <img src="image/e-6.png" alt="" />
+          <h1>Sound System</h1>
+        </div>  
+
+        <div class="slide">
+          <img src="image/e-8.png" alt="" />
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Caraousel ends  -->
+
+    <!-- features section starts -->
+
+
+    <section class="features" id="Features">
+      <h1 class="heading">Deals <span>Of the Day</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="image/tv-1.png" alt="" />
+          <h3>BILLSHINDE TV 3000</h3>
+          <p>
+            BILLSHINDE TV 3000 (50 inch) 4K Ultra HD LED TV
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <img src="image/tv-2.png" alt="" />
+          <h3>LQ WASHING Machine</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+            animi?
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <img src="image/tv-3.png" alt="" />
+          <h3>GAMING LAPTOP</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur<br />
+            adipisicing elit. Quos, animi?
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+      </div>
+    </section>
+    <!-- features section ends -->
+
+    <!-- product section start -->
+    <section class="products" id="Products">
+      <h1 class="heading">our <span>products</span></h1>
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="image/P-1 (1).png" alt="" />
+            <h3>Air Condition</h3>
+            <div class="price">$899/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/p-2.png" alt="" />
+            <h3>Fridge</h3>
+            <div class="price">$1699/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/p-3.png" alt="" />
+            <h3>Iron</h3>
+            <div class="price">$249/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/p-4.png" alt="" />
+            <h3>Microwave Owen</h3>
+            <div class="price">$599/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+
+          <div class="swiper-slide box">
+            <img src="image/p-5.png" alt="" />
+            <h3>LED Tv</h3>
+            <div class="price">$599/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/p-6.png" alt="" />
+            <h3>HP Laptop</h3>
+            <div class="price">$599/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/p-7.png" alt="" />
+            <h3>Washing Machine</h3>
+            <div class="price">$599/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="image/p-8.png" alt="" />
+            <h3>Small Cordless Electric Fan </h3>
+            <div class="price">$799/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/p-9.png" alt="" />
+            <h3>Toster</h3>
+            <div class="price">$499/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/p-10.png" alt="" />
+            <h3>Fan</h3>
+            <div class="price">$3999/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/p-11.png" alt="" />
+            <h3>Table Lamp </h3>
+            <div class="price">$199/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/p-15.png" alt="" />
+            <h3>AirPods</h3>
+            <div class="price">$99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- product section ends -->
+
+    <!-- categories section starts here -->
+    <section class="categories" id="Categories">
+      <h1 class="heading">product <span>categories</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="image/p-12.png" alt="" />
+          <h3>Kitchen Appliances</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+          <img src="image/p-13.png" alt="" />
+          <h3>Room Appliance</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+          <img src="image/p-14.png" alt="" />
+          <h3>Electronics</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn">shop now</a>
+        </div>
+
+        <!-- <div class="box">
+          <img src="image/cat-4.webp" alt="" />
+          <h3>computer setst</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn">shop now</a>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- categories section ends here -->
+
+    <!-- review section starts -->
+    <section class="review" id="Reviews">
+      <h1 class="heading">customer's <span>review</span></h1>
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="image/pic-1.webp" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              mollitia nam quae laboriosam molestias quidem recusandae.
+              Aspernatur quam impedit unde.
+            </p>
+            <h3>Aditya Shinde</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/pic-2.webp" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              mollitia nam quae laboriosam molestias quidem recusandae.
+              Aspernatur quam impedit unde.
+            </p>
+            <h3>Gautam Gikwad</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/pic-3.webp" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              mollitia nam quae laboriosam molestias quidem recusandae.
+              Aspernatur quam impedit unde.
+            </p>
+            <h3>John deo</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/pic-4.webp" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              mollitia nam quae laboriosam molestias quidem recusandae.
+              Aspernatur quam impedit unde.
+            </p>
+            <h3>John deo</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- review section ends -->
+
+    <!-- blog section start here -->
+
+    <section class="blogs" id="Blogs">
+      <h1 class="heading">our <span>blogs</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="image/blog-1.png" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-user"></i>by user</a>
+              <a href="#"><i class="fas fa-calendar"></i>13 june, 1993</a>
+            </div>
+            <h3>Electronics Gadgets</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel,
+              itaque!
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="image/blog-2.png" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-user"></i>by user</a>
+              <a href="#"><i class="fas fa-calendar"></i>13 june, 1993</a>
+            </div>
+            <h3>Electronics Gadgets</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel,
+              itaque!
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="image/blog-3.png" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-user"></i>by user</a>
+              <a href="#"><i class="fas fa-calendar"></i>13 june, 1993</a>
+            </div>
+            <h3>Electronics Gadgets</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel,
+              itaque!
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog section ends here -->
+
+    <!-- footer section starts here -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Electro <i class="fas fa-laptop-house"></i></h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid,
+            dolore!
+          </p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#" class="links"
+            ><i class="fas fa-phone"></i> +123 456 7890
+          </a>
+          <a href="#" class="links"
+            ><i class="fas fa-phone"></i> +111 222 3333
+          </a>
+          <a href="#" class="links"
+            ><i class="fas fa-envelope"></i> ab@gmail.com
+          </a>
+          <a href="#" class="links"
+            ><i class="fas fa-map-marker-alt"></i> mumbai, india - 400104
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>Quick Links</h3>
+          <a href="#" class="links"><i class="fas fa-arrow-right"></i> home </a>
+          <a href="#" class="links"
+            ><i class="fas fa-arrow-right"></i> features
+          </a>
+          <a href="#" class="links"
+            ><i class="fas fa-arrow-right"></i> products
+          </a>
+          <a href="#" class="links"
+            ><i class="fas fa-arrow-right"></i> categories
+          </a>
+          <a href="#" class="links"
+            ><i class="fas fa-arrow-right"></i> reviews
+          </a>
+          <a href="#" class="links"
+            ><i class="fas fa-arrow-right"></i> blogs
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <input type="email" placeholder="your email" class="email" />
+          <input type="submit" value="subscribe" class="btn" />
+       
+        </div>
+      </div>
+
+      <div class="credit">
+        created by <span>Abeneer Saipogu</span> | all rights reserved
+      </div>
+    </section>
+    <!-- footer section ends here -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
+    <!-- custom js file link -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
